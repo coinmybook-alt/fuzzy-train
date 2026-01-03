@@ -1,29 +1,28 @@
 name: Playlist Guncelle
 
 on:
+  workflow_dispatch:
   schedule:
-    - cron: '0 */6 * * *' # Her 6 saatte bir çalışır
-  workflow_dispatch: # Manuel çalıştırma butonu ekler
+    - cron: '0 */6 * * *'
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout kodlarını çek
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
       - name: Python Kur
         uses: actions/setup-python@v4
         with:
           python-version: '3.9'
 
-      - name: Scripti Çalıştır
+      - name: Calistir
         run: python main.py
 
-      - name: Değişiklikleri Kaydet ve Pushla
+      - name: Kaydet
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add playlist.m3u
-          git commit -m "Playlist güncellendi" || exit 0
+          git commit -m "Playlist guncellendi" || exit 0
           git push
