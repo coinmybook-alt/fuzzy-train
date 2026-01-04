@@ -9,9 +9,7 @@ http://95.174.71.114/TR-ATV/index.m3u8
 http://95.174.71.114:80/TR-STAR/index.m3u8
 #EXTINF:-1 tvg-id="SHOW TV HD.tr" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/f/f1/Logo_of_Show_TV.png" group-title="Ulusal",SHOW TV
 http://95.174.71.114:80/TR-SHOW/index.m3u8
-#EXTINF:-1 tvg-id="KanalD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/0/08/Kanal_D_logo_2011.png" group-title="Ulusal",Kanal D
-https://demiroren.daioncdn.net/kanald/kanald.m3u8
-
+{"ad": "KANAL D", "url": "https://demiroren.daioncdn.net/kanald/kanald.m3u8|User-Agent=Mozilla/5.0"},
 #EXTINF:-1 tvg-id="NOWTV.tr" tvg-logo="https://www.nowtv.com.tr/static/img/now-logo.png" group-title="Ulusal",NOW TV
 https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv.m3u8
 #EXTINF:-1 tvg-id="TV8 HD.tr" tvg-logo="https://i.ibb.co/Kr5SFY1/tv8.png" group-title="Ulusal",TV 8
