@@ -1,29 +1,19 @@
 def create_m3u():
-    # Senin paylaştığın en güncel ve yedekli kanal listesi
-    m3u_content = """#EXTM3U
-#EXTINF:-1 tvg-id="ATV HD.tr" tvg-logo="https://i.ibb.co/DwFJ0vn/atv.png" group-title="Ulusal",ATV
-https://trkvz-live.daioncdn.net/atv/atv_1080p.m3u8|User-Agent=Mozilla/5.0
-#EXTINF:-1 tvg-id="KanalD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/0/08/Kanal_D_logo_2011.png" group-title="Ulusal",Kanal D
-https://demiroren.daioncdn.net/kanald/kanald.m3u8|User-Agent=Mozilla/5.0
-#EXTINF:-1 tvg-id="NOWTV.tr" tvg-logo="https://www.nowtv.com.tr/static/img/now-logo.png" group-title="Ulusal",NOW TV
-https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv.m3u8|User-Agent=Mozilla/5.0
-#EXTINF:-1 tvg-id="TRT1 HD.tr" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/6/6c/TRT_1_logo.png" group-title="Ulusal",TRT 1
-https://tv-trt1.medya.trt.com.tr/master.m3u8
-#EXTINF:-1 tvg-id="STAR TV HD.tr" tvg-logo="https://i.ibb.co/hY3Z8zx/star-tv.png" group-title="Ulusal",STAR TV
-https://dogus-live.daioncdn.net/startv/startv.m3u8
-#EXTINF:-1 tvg-id="SHOW TV HD.tr" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/f/f1/Logo_of_Show_TV.png" group-title="Ulusal",SHOW TV
-https://ciner-live.daioncdn.net/showtv/showtv.m3u8
-#EXTINF:-1 tvg-id="TV8 HD.tr" tvg-logo="https://i.ibb.co/Kr5SFY1/tv8.png" group-title="Ulusal",TV 8
-https://tv8-live.daioncdn.net/tv8/tv8.m3u8
-#EXTINF:-1 tvg-id="KANAL 7 HD.tr" tvg-logo="https://e7.pngegg.com/pngimages/361/407/png-clipart-kanal-7.png" group-title="Ulusal",KANAL 7
-https://kanal7-live.daioncdn.net/kanal7/kanal7_1080p.m3u8
-#EXTINF:-1 tvg-id="TV8,5 HD.tr" tvg-logo="https://upload.wikimedia.org/wikipedia/tr/6/68/Tv8_Yeni_Logo.png" group-title="Spor",TV 8.5
-https://rkhubpaomb.turknet.ercdn.net/fwjkgpasof/tv8bucuk/tv8bucuk_1080p.m3u8
-#EXTINF:-1 tvg-id="A SPOR HD.tr" tvg-logo="https://upload.wikimedia.org/wikipedia/tr/archive/e/e9/A_Spor_logosu.png" group-title="Spor",A SPOR
-https://trkvz-live.daioncdn.net/aspor/aspor_1080p.m3u8"""
-
+    # Kanal D, ATV ve senin son paylaştığın özel link dahil güncel liste
+    kanallar = [
+        {"ad": "KANAL D", "url": "https://demiroren.daioncdn.net/kanald/kanald.m3u8|User-Agent=Mozilla/5.0"},
+        {"ad": "ATV", "url": "https://trkvz-live.daioncdn.net/atv/atv_1080p.m3u8|User-Agent=Mozilla/5.0"},
+        {"ad": "OZEL YAYIN", "url": "http://104.238.23.182/d/live/out.m3u8"},
+        {"ad": "TRT 1", "url": "https://tv-trt1.medya.trt.com.tr/master.m3u8"},
+        {"ad": "STAR TV", "url": "https://dogus-live.daioncdn.net/startv/startv.m3u8"},
+        {"ad": "SHOW TV", "url": "https://ciner-live.daioncdn.net/showtv/showtv.m3u8"},
+        {"ad": "NOW TV", "url": "https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv.m3u8|User-Agent=Mozilla/5.0"}
+    ]
+    
     with open("playlist.m3u", "w", encoding="utf-8") as f:
-        f.write(m3u_content)
+        f.write("#EXTM3U\n")
+        for k in kanallar:
+            f.write(f"#EXTINF:-1,{k['ad']}\n{k['url']}\n")
 
 if __name__ == "__main__":
     create_m3u()
