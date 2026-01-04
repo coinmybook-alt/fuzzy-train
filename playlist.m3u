@@ -1,15 +1,19 @@
 #EXTM3U
-#EXTINF:-1,TRT 1 HD
-http://89.187.191.41/TRT-1-HD-TR/video.m3u8
-#EXTINF:-1,ATV
-http://95.174.71.114/TR-ATV/index.m3u8
+#EXTINF:-1,KANAL D
+https://demiroren.daioncdn.net/kanald/kanald.m3u8
+#EXTINF:-1,CNN TURK
+https://demiroren.daioncdn.net/cnnturk/cnnturk.m3u8
+#EXTINF:-1,TRT 1
+https://tv-trt1.medya.trt.com.tr/master.m3u8
+#EXTINF:-1,TRT SPOR
+https://tv-trtspor1.medya.trt.com.tr/master.m3u8
 #EXTINF:-1,STAR TV
-http://95.174.71.114:80/TR-STAR/index.m3u8
+https://dogus-live.daioncdn.net/startv/startv.m3u8
 #EXTINF:-1,SHOW TV
-http://95.174.71.114:80/TR-SHOW/index.m3u8
+https://ciner-live.daioncdn.net/showtv/showtv.m3u8
 #EXTINF:-1,TV8
-http://95.174.71.114/TR-TV8/index.m3u8
-#EXTINF:-1,KANAL 7 HD
+https://tv8-live.daioncdn.net/tv8/tv8.m3u8
+#EXTINF:-1,KANAL 7
 https://kanal7-live.daioncdn.net/kanal7/kanal7.m3u8
 #EXTINF:-1,BEYAZ TV
 https://beyaztv-live.daioncdn.net/beyaztv/beyaztv.m3u8
