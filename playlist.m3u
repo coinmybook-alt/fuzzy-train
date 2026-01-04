@@ -10,7 +10,7 @@ def create_m3u():
         {"ad": "TV8", "url": "http://95.174.71.114/TR-TV8/index.m3u8"},
         {"ad": "KANAL 7 HD", "url": "https://kanal7-live.daioncdn.net/kanal7/kanal7.m3u8"},
         {"ad": "BEYAZ TV", "url": "https://beyaztv-live.daioncdn.net/beyaztv/beyaztv.m3u8"}
-{"ad": "KANAL D", "url": "ad": "KANAL D", "url": "https://demiroren.daioncdn.net/kanald/kanald.m3u8"},https//demiroren.daioncdn.net/kanald/kanald.m3u8"},
+        {"ad": "KANAL D", "url": "ad": "KANAL D", "url": "https://demiroren.daioncdn.net/kanald/kanald.m3u8"},
     ]
     
     with open("playlist.m3u", "w", encoding="utf-8") as f:
