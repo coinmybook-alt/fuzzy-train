@@ -1,15 +1,42 @@
 #EXTM3U
-#EXTINF:-1,KANAL D
-https://demiroren.daioncdn.net/kanald/kanald.m3u8
-#EXTINF:-1,ATV
-https://trkvz-live.daioncdn.net/atv/atv_1080p.m3u8
-#EXTINF:-1,TRT 1
+#EXTINF:-1 group-title="ULUSAL",TRT 1
 https://tv-trt1.medya.trt.com.tr/master.m3u8
-#EXTINF:-1,STAR TV
-https://dogus-live.daioncdn.net/startv/startv.m3u8
-#EXTINF:-1,SHOW TV
-https://ciner-live.daioncdn.net/showtv/showtv.m3u8
-#EXTINF:-1,TV8
-https://tv8-live.daioncdn.net/tv8/tv8.m3u8
-#EXTINF:-1,KANAL 7
-https://kanal7-live.daioncdn.net/kanal7/kanal7.m3u8
+
+#EXTINF:-1 group-title="ULUSAL",KANAL D
+https://demiroren-live.daioncdn.net/kanald/kanald.m3u8
+
+#EXTINF:-1 group-title="ULUSAL",STAR TV
+https://mn-nl.mncdn.com/blutv_star/smil:star_sd.smil/playlist.m3u8
+
+#EXTINF:-1 group-title="ULUSAL",ATV
+https://trkvz-live.daioncdn.net/atv/atv.m3u8
+
+#EXTINF:-1 group-title="ULUSAL",SHOW TV
+https://mn-nl.mncdn.com/blutv_showtv/smil:show_sd.smil/playlist.m3u8
+
+#EXTINF:-1 group-title="ULUSAL",TV8
+https://mn-nl.mncdn.com/blutv_tv8/smil:tv8_sd.smil/playlist.m3u8
+
+#EXTINF:-1 group-title="ULUSAL",NOW TV
+https://mn-nl.mncdn.com/blutv_foxtv/smil:foxtv_sd.smil/chunklist.m3u8
+
+#EXTINF:-1 group-title="HABER",TRT HABER
+https://tv-trthaber.medya.trt.com.tr/master.m3u8
+
+#EXTINF:-1 group-title="HABER",NTV
+https://dogus-live.daioncdn.net/ntv/ntv.m3u8
+
+#EXTINF:-1 group-title="HABER",HABERTURK
+https://mn-nl.mncdn.com/blutv_haberturk/smil:haberturk_sd.smil/playlist.m3u8
+
+#EXTINF:-1 group-title="HABER",CNN TURK
+https://demiroren-live.daioncdn.net/cnnturk/cnnturk.m3u8
+
+#EXTINF:-1 group-title="COCUK",TRT COCUK
+https://tv-trtcocuk.medya.trt.com.tr/master.m3u8
+
+#EXTINF:-1 group-title="SPOR",TRT SPOR
+https://tv-trtspor1.medya.trt.com.tr/master.m3u8
+
+#EXTINF:-1 group-title="BELGESEL",TRT BELGESEL
+https://tv-trtbelgesel.medya.trt.com.tr/master.m3u8
